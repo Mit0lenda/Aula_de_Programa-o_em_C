@@ -1,5 +1,5 @@
 #include <stdio.h>
-//Desenho com matriz
+//Desenho 
 int main()
 {
   int n=20;
