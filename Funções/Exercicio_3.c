@@ -4,22 +4,22 @@
 int verificacao(int n1)
 {
     int veri;
-    if(n1>=5||n1<=7)
+    if(n1>=5 && n1<=7)
     {
         veri=1;
     }
     else{
-    if(n1>=8||n1<=10)
+    if(n1>=8 && n1<=10)
         {
             veri=2;
         }
     else{
-    if(n1>=11||n1<=13)
+    if(n1>=11 && n1<=13)
     {
         veri=3;
     }
     else{
-        if(n1>=14||n1<=17)
+        if(n1>=14 && n1<=17)
         {
           veri=4;
         }
@@ -35,8 +35,8 @@ int verificacao(int n1)
 int main(){
     int m1,idade;
     printf("Digite sua idade:");
-    scanf("%f",&m1);
-    printf("você digitou um numero:%d",verificacao(m1));
+    scanf("%d",&m1);
+    idade=verificacao(m1);
     switch (idade)
     {
     case 1:
