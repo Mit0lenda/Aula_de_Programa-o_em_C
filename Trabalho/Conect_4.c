@@ -174,16 +174,18 @@ int main()
         if (win1 == 1)
         {
             printf("\nParabens voce ganhou Jogador 1\a\n");
+            j1++;
+            printf("\n\nPrimeiro jogador ganhou %d e o Segundo jogador ganhou %d\n\n", j1, j2);
             printf("Digite 0 se quiser continuar a jogar e 1 para parar");
             scanf("%d", &jog);
-            j1++;
         }
         if (win1 == 2)
         {
             printf("\nParabens voce ganhou Jogador 2\a\n");
+            j2++;
+            printf("\n\nPrimeiro jogador ganhou %d e o Segundo jogador ganhou %d\n\n", j1, j2);
             printf("Digite 0 se quiser continuar a jogar e 1 para parar");
             scanf("%d", &jog);
-            j2++;
         }
     }
     return 0;
