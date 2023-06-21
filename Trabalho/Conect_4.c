@@ -180,6 +180,11 @@ int main()
             printf("\n\nPrimeiro jogador ganhou %d e o Segundo jogador ganhou %d\n\n", j1, j2);
             printf("Digite 0 se quiser continuar a jogar e 1 para parar");
             scanf("%d", &jog);
+            while (jog < 0 || jog > 1)
+            {
+                printf("Digite 0 se quiser continuar a jogar e 1 para parar");
+                scanf("%d", &jog);
+            }
         }
         if (win1 == 2) // Jogador 2 ganhou,mostra o placar e pergunta se quer continuar.
         {
@@ -188,6 +193,11 @@ int main()
             printf("\n\nPrimeiro jogador ganhou %d e o Segundo jogador ganhou %d\n\n", j1, j2);
             printf("Digite 0 se quiser continuar a jogar e 1 para parar");
             scanf("%d", &jog);
+            while (jog < 0 || jog > 1)
+            {
+                printf("Digite 0 se quiser continuar a jogar e 1 para parar");
+                scanf("%d", &jog);
+            }
         }
         if (win1 == 3) // Empatou,mostra o placar e pergunta se quer continuar.
         {
@@ -195,6 +205,11 @@ int main()
             printf("\n\nPrimeiro jogador ganhou %d e o Segundo jogador ganhou %d\n\n", j1, j2);
             printf("Digite 0 se quiser continuar a jogar e 1 para parar");
             scanf("%d", &jog);
+            while (jog < 0 || jog > 1)
+            {
+                printf("Digite 0 se quiser continuar a jogar e 1 para parar");
+                scanf("%d", &jog);
+            }
         }
     }
 }
