@@ -10,7 +10,7 @@ int main()
     scanf("%d", &n2);
     printf("Qual operação que ce deseja realizar:\n1)Soma\n2)Subtração\n3)Multiplicação\n4)Divisão\n");
     scanf("%d", &menu);
-    if (menu < 1 || menu > 4)
+    if (menu < 1 || menu > 4)  //se fizer if(menu != 1 && menu !=2 && menu !=3 && menu != 4) tem que utilizar && pois || no primeiro verdadeiro que der vai ficar no if e não cair no else.
     {
         printf("Qual operação que ce deseja realizar:\n1)Soma\n2)Subtração\n3)Multiplicação\n4)Divisão\n");
         scanf("%d", &menu);
@@ -35,8 +35,6 @@ int main()
                 }
                 else
                 {
-                    if (menu == 4)
-                    {
                         if (n1 == 0 || n2 == 0)
                         {
                             printf("Não pode ter divisão por zero!");
@@ -45,7 +43,6 @@ int main()
                         {
                             printf("A opção selecionada foi Divisão.A Divisão dos numeros %d e %d:%.2f",n1,n2,(float)n1/n2);
                         }
-                    }
                     
                 }
             }
