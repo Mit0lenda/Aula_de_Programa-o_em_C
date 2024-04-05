@@ -3,10 +3,11 @@
 int main()
 {
     int idade;
-    printf("Qual sua idade:");
+    printf("Qual sua idade: ");
     scanf("%d", &idade);
     if (idade <= 0)
     {
+        printf("\nIDADE INCORRETA\n");
         printf("Digite novamente sua idade:");
         scanf("%d", &idade);
         if (idade >= 18)
