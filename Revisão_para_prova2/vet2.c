@@ -15,7 +15,6 @@ int main()
                 vetor[j+1]=vetor[j];
                 vetor[j]=aux;
             }
-            
         }
     }
     for (v=0;v<15;v++)
