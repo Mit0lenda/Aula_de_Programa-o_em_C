@@ -2,7 +2,7 @@
 //Desenho 
 int main()
 {
-  int n=20;
+  int n=5;
   for(int linha=0;linha<n;linha++)
   {
     for (int coluna=0;coluna < n; coluna++)

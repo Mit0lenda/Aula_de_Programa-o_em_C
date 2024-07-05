@@ -1,0 +1,2 @@
+O operador % em C é chamado de operador módulo ou operador de resto. Ele retorna o resto da divisão inteira entre dois números.
+ Por exemplo, 5 % 2 resultaria em 1, pois 5 dividido por 2 é igual a 2 com um resto de 1.
