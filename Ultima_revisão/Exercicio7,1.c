@@ -22,7 +22,7 @@ int energetico()
         printf("\nInvalido,Digite Novamente!");
         printf("\nVc bebe Energetico:1)sim 2)nao");
         scanf("%d", &bebe);
-    }
+    }   
     return bebe;
 }
 int quantidadeBebida()
