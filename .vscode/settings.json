@@ -1,5 +1,6 @@
 {
     "files.associations": {
         "exercicio_4": "c"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
