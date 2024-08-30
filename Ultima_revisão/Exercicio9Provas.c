@@ -1,4 +1,7 @@
 #include <stdio.h>
+float mediaPeso(){
+
+}
 int main()
 {
     int codigo[10];
@@ -8,6 +11,7 @@ int main()
     char sexo[10];
     int opcao;
     int contador = 0;
+    float media=0;
 
     while (opcao != 5)
     {
@@ -42,6 +46,17 @@ int main()
             contador+=1;
             break;
         case 2:
+        if (contador == 0)
+        {
+            printf("Nenhuma ave cadastrada");
+            break;
+        } else if ()
+        {
+            for (int i = 0; i < contador; i++)
+            {
+                media=mediaPeso(peso());
+            }
+        }                
             break;
         case 3:
             break;
