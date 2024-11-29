@@ -1,0 +1,2 @@
+Aluno:eduardo;Nota1:9.00;9.00;9.00;9.00
+Aluno:joao;Nota1:10.00;10.00;10.00;10.00

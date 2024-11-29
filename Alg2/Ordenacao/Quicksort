@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void troca(int *v1, int *v2)
+{
+    int temp = *v1;
+    *v1 = *v2;
+    *v2 = temp;
+}
+
+int dividevetor(int vetor[], int menor, int maior)
+{
+    int pivo = vetor[maior];
+    int i = menor - 1;
+
+    for (int j = menor; j < maior; j++)
+    {
+        if (vetor[j] <= pivo)
+        {
+            i++;
+            troca(&vetor[i], &vetor[j]);
+        }
+    }
+    printf("\nvalor de i %d ", i);
+
+    troca(&vetor[i + 1], &vetor[maior]);
+    return i + 1;
+}
+
+void quicksort(int vetor[], int n)
+{
+    int indice_pivo, indice_esq, indice_dir;
+    int menor = 0;
+    int maior = n - 1;
+
+    while (menor < maior)
+    {
+
+        indice_pivo = dividevetor(vetor, menor, maior);
+
+        if (indice_pivo - 1 > menor)
+        {
+            indice_esq = dividevetor(vetor, menor, indice_pivo - 1);
+            menor = indice_esq + 1;
+        }
+
+        else
+        {
+
+            indice_dir = dividevetor(vetor, indice_pivo + 1, maior);
+            maior = indice_dir - 1;
+        }
+    }
+}
+int main()
+{
+    int vetor[5], i;
+
+    for (i = 0; i < 5; i++)
+    {
+        printf("\nDigite um valor");
+        scanf("%d", &vetor[i]);
+    }
+
+    quicksort(vetor, 5);
+
+    for (i = 0; i < 5; i++)
+    {
+        printf("%d ", vetor[i]);
+    }
+}
